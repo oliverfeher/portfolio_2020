@@ -38,8 +38,11 @@ function HomePage()
 function AboutMe()
 {
     return (
-        <div>
-            Hello About me!
+        <div id="main">
+            <Dots place="top-left"/>
+            <Dots place="bottom-right"/>
+            <NavBar />
+            <SocialIcons />
         </div>
     )
 }
