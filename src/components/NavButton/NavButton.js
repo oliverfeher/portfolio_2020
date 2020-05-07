@@ -4,7 +4,7 @@ import "./NavButton.css"
 const NavButton = props =>
 {
     return (
-        <a>{props.title}</a>
+       <p></p>
     )
 }
 

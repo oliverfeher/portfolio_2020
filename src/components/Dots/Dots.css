@@ -1,0 +1,14 @@
+#top-left {
+    position: fixed;
+    width: 20%;
+    top: -20px;
+    left: 0;
+}
+
+#bottom-right {
+    position: fixed;
+    width: 20%;
+    bottom: -25px;
+    right: 0;
+    transform: rotate(180deg);
+}
