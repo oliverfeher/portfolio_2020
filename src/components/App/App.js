@@ -6,7 +6,7 @@ import NavBar from "../NavBar/NavBar"
 import Dots from "../Dots/Dots";
 import Button from "../Button/Button";
 import SocialIcons from "../SocialIcons/SocialIcons";
-import { Switch, Link, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 function App() 
 {
@@ -14,6 +14,7 @@ function App()
         <Switch>
             <Route exact path="/" component={HomePage} />
             <Route exact path="/about" component={AboutMe} />
+            <Route exact path="/contact" component={Contact} />
         </Switch>
     )
 }
@@ -36,6 +37,18 @@ function HomePage()
 }
 
 function AboutMe()
+{
+    return (
+        <div id="main">
+            <Dots place="top-left"/>
+            <Dots place="bottom-right"/>
+            <NavBar />
+            <SocialIcons />
+        </div>
+    )
+}
+
+function Contact()
 {
     return (
         <div id="main">

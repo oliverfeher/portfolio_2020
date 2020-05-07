@@ -7,10 +7,10 @@ class NavBar extends React.Component
     {
         return (
             <div id="nav-bar">
-                <NavButton title="Home" path="/"/>
-                <NavButton title="About me" path="/about"/>
-                <NavButton title="Projects" />
-                <NavButton title="Contact" />
+                <NavButton title="Home" path="/" />
+                <NavButton title="About me" path="/about" />
+                <NavButton title="Projects" path="/projects" />
+                <NavButton title="Contact" path="/contact" />
             </div>
         )
     }
