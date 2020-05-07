@@ -27,3 +27,22 @@ html {
   display: flex;
   justify-content: flex-end;
 }
+
+#explore-btn {
+  margin-top: 3%;
+  width: 10%;
+  align-self: center;
+  border-radius: 25px;
+  font-size: 1.1em;
+  border: 3px solid #02ADC8;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+#explore-btn:hover {
+  border: 3px solid white;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+}

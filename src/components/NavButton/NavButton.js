@@ -4,7 +4,7 @@ import "./NavButton.css"
 const NavButton = props =>
 {
     return (
-       <p></p>
+        <a className="nav-link" href="#">{props.title}</a>
     )
 }
 

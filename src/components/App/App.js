@@ -3,7 +3,8 @@ import "./App.css";
 import Hello from "../Hello/Hello";
 import Intro from "../Intro/Intro";
 import NavBar from "../NavBar/NavBar"
-import Dots from "../Dots/Dots"
+import Dots from "../Dots/Dots";
+import Button from "../Button/Button"
 
 class App extends React.Component 
 {
@@ -16,6 +17,7 @@ class App extends React.Component
                 <NavBar />
                 <Intro />
                 <Hello />
+                <Button id="explore-btn" title="explore"/>
             </div>
         );
     }
