@@ -9,3 +9,8 @@
     min-height: 100vh;
     background-image: url("./Group\ 39.svg");
 }
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
