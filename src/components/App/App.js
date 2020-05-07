@@ -4,7 +4,8 @@ import Hello from "../Hello/Hello";
 import Intro from "../Intro/Intro";
 import NavBar from "../NavBar/NavBar"
 import Dots from "../Dots/Dots";
-import Button from "../Button/Button"
+import Button from "../Button/Button";
+import SocialIcons from "../SocialIcons/SocialIcons";
 
 class App extends React.Component 
 {
@@ -18,6 +19,7 @@ class App extends React.Component
                 <Intro />
                 <Hello />
                 <Button id="explore-btn" title="explore"/>
+                <SocialIcons />
             </div>
         );
     }

@@ -46,3 +46,16 @@ html {
   cursor: pointer;
   background-color: white;
 }
+
+#social-container {
+  margin-top: auto;
+  margin-bottom: 2%;
+}
+.social-icon {
+  width: 2%;
+  margin-left: 2%;
+}
+
+.social-icon:hover {
+  cursor: pointer;
+}

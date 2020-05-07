@@ -3,3 +3,13 @@ img {
     width: 25%;
     align-self: center;
 }
+
+#hello-container {
+    display:flex;
+    flex-direction: column;
+}
+
+#hello-dots {
+    width: 5%;
+    margin-bottom: 0.5%;
+}
