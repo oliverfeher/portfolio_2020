@@ -9,12 +9,28 @@ class SocialIcons extends React.Component
     {
         return(
             <div id="social-container">
-                <img className="social-icon" src={github}></img>
-                <img className="social-icon" src={twitter}></img>
-                <img className="social-icon" src={linkedin}></img>
+                <img className="social-icon" onClick={this.redirecGitHub} src={github}></img>
+                <img className="social-icon" onClick={this.redirectTwitter} src={twitter}></img>
+                <img className="social-icon" onClick={this.redirectLinkedIn} src={linkedin}></img>
             </div>
         )
     }
+
+    redirectLinkedIn()
+    {
+        window.open("https://www.linkedin.com/in/ofeher", "_blank");
+    }
+
+    redirectTwitter()
+    {
+        window.open("https://twitter.com/Oliver92F", "_blank");
+    }
+
+    redirecGitHub()
+    {
+        window.open("https://github.com/oliverfeher", "_blank");
+    }
+
 }
 
 export default SocialIcons;
