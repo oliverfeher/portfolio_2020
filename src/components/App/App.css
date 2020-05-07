@@ -5,7 +5,7 @@
     font-family: 'Gugi', cursive;
   }
 html {
-  background-image: url("./Background.svg");
+  background-image: url("./Background.png");
   width: 100%;
 }
 #root {
@@ -60,3 +60,4 @@ html {
   cursor: pointer;
   transform: scale(1.2);
 }
+
