@@ -7,12 +7,11 @@
 }
 
 #bottom-right {
-    animation: slide-in-br 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     position: fixed;
     width: 20%;
     bottom: -25px;
     right: 0;
-    transform: rotate(180deg);
+    animation: slide-in-br 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @keyframes slide-in-br {
@@ -23,7 +22,7 @@
     }
     100% {
       -webkit-transform: translateY(0) translateX(0);
-              transform: translateY(0) translateX(0);
+              transform: translateY(0) translateX(0) rotate(180deg);
       opacity: 1;
     }
   }
