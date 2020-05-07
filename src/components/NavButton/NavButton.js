@@ -1,10 +1,11 @@
 import React from "react";
 import "./NavButton.css"
+import { Link} from "react-router-dom";
 
 const NavButton = props =>
 {
     return (
-        <a className="nav-link" href="#">{props.title}</a>
+        <Link className="nav-link" to={props.path}>{props.title}</Link>
     )
 }
 

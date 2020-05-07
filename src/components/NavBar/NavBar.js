@@ -7,8 +7,8 @@ class NavBar extends React.Component
     {
         return (
             <div id="nav-bar">
-                <NavButton title="Home" />
-                <NavButton title="About me" />
+                <NavButton title="Home" path="/"/>
+                <NavButton title="About me" path="/about"/>
                 <NavButton title="Projects" />
                 <NavButton title="Contact" />
             </div>
