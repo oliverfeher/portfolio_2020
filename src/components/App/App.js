@@ -62,11 +62,11 @@ function Projects()
             <div id="projects-container">
                 <ProjectCard 
                     src={gif1} 
-                    desc1="Built with React framework."
+                    desc1="+ Built Ruby's Sinatra framework."
+                    desc2="+ Utilized MVC pattern."
+                    desc3="+ Login/Signup authentication system with BCrypt."
+                    desc4="+ Utilize CRUD actions to a SQLite3 database."
                 />
-                <ProjectCard/>
-                <ProjectCard/>
-                <ProjectCard/>
             </div>
             <SocialIcons />
         </div>

@@ -26,8 +26,10 @@ class ProjectCard extends React.Component
             return (
                 <div className="card-container">
                     <div className="card-description" onClick={this.handleOnClickBack}>
-                        <p>+ {this.props.desc1}</p>
-                        <p>+ {this.props.desc2}</p>
+                        <p className="card-description-text">{this.props.desc1}</p>
+                        <p className="card-description-text">{this.props.desc2}</p>
+                        <p className="card-description-text">{this.props.desc3}</p>
+                        <p className="card-description-text">{this.props.desc4}</p>
                     </div>
                 </div>
             )
