@@ -60,7 +60,10 @@ function Projects()
             <NavBar />
             <p className="section-title">Recent Projects</p>
             <div id="projects-container">
-                <ProjectCard src={gif1}/>
+                <ProjectCard 
+                    src={gif1} 
+                    desc1="Built with React framework."
+                />
                 <ProjectCard/>
                 <ProjectCard/>
                 <ProjectCard/>

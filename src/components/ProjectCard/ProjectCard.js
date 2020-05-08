@@ -1,5 +1,6 @@
 import React from "react";
 
+
 class ProjectCard extends React.Component
 {
     constructor(props)
@@ -16,7 +17,7 @@ class ProjectCard extends React.Component
         {
             return (
                 <div className="card-container">
-                    <img class="card-img" src={this.props.src}></img>
+                    <img onClick={this.handleOnClick} className="card-img" src={this.props.src}></img>
                 </div>
             )
         }
@@ -24,10 +25,22 @@ class ProjectCard extends React.Component
         {
             return (
                 <div className="card-container">
-                    <div>Hello</div>
+                    <div className="card-description" onClick={this.handleOnClickBack}>
+                        <p>+ {this.props.desc1}</p>
+                        <p>+ {this.props.desc2}</p>
+                    </div>
                 </div>
             )
         }
+    }
+
+    handleOnClick = () => {
+        this.setState({isClicked: true});
+    }
+
+    handleOnClickBack = () =>
+    {
+        this.setState({isClicked: false});
     }
 
 }
