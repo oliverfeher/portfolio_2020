@@ -58,6 +58,7 @@ function Projects()
             <Dots place="top-left"/>
             <Dots place="bottom-right"/>
             <NavBar />
+            <p className="section-title">Recent Projects</p>
             <div id="projects-container">
                 <ProjectCard src={gif1}/>
                 <ProjectCard/>
