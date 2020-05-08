@@ -1,13 +1,14 @@
 import React from "react";
 import "./App.css";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 import Hello from "../Hello/Hello";
 import Intro from "../Intro/Intro";
 import NavBar from "../NavBar/NavBar"
 import Dots from "../Dots/Dots";
-import Button from "../Button/Button";
 import SocialIcons from "../SocialIcons/SocialIcons";
 import AboutMe from "../AboutMe/AboutMe"
+import ProjectCard from "../ProjectCard/ProjectCard";
+import gif1 from "../App/gif.gif"
 
 function App() 
 {
@@ -16,6 +17,7 @@ function App()
             <Route exact path="/" component={HomePage} />
             <Route exact path="/about" component={AboutMe} />
             <Route exact path="/contact" component={Contact} />
+            <Route exact path="/projects" component={Projects} />
         </Switch>
     )
 }
@@ -29,8 +31,8 @@ function HomePage()
             <NavBar />
             <div id="center">
                 <Intro />
-                <Hello />
-                <Button className="btn" title="explore"/>
+                <Hello />s
+                <Link className="btn" to="/projects">explore</Link>
             </div>
             <SocialIcons />
         </div>
@@ -44,6 +46,24 @@ function Contact()
             <Dots place="top-left"/>
             <Dots place="bottom-right"/>
             <NavBar />
+            <SocialIcons />
+        </div>
+    )
+}
+
+function Projects()
+{
+    return (
+        <div id="main">
+            <Dots place="top-left"/>
+            <Dots place="bottom-right"/>
+            <NavBar />
+            <div id="projects-container">
+                <ProjectCard src={gif1}/>
+                <ProjectCard/>
+                <ProjectCard/>
+                <ProjectCard/>
+            </div>
             <SocialIcons />
         </div>
     )
