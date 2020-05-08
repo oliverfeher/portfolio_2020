@@ -1,12 +1,13 @@
 import React from "react";
 import "./App.css";
+import { Switch, Route } from "react-router-dom";
 import Hello from "../Hello/Hello";
 import Intro from "../Intro/Intro";
 import NavBar from "../NavBar/NavBar"
 import Dots from "../Dots/Dots";
 import Button from "../Button/Button";
 import SocialIcons from "../SocialIcons/SocialIcons";
-import { Switch, Route } from "react-router-dom";
+import AboutMe from "../AboutMe/AboutMe"
 
 function App() 
 {
@@ -29,20 +30,8 @@ function HomePage()
             <div id="center">
                 <Intro />
                 <Hello />
-                <Button id="explore-btn" title="explore"/>
+                <Button className="btn" title="explore"/>
             </div>
-            <SocialIcons />
-        </div>
-    )
-}
-
-function AboutMe()
-{
-    return (
-        <div id="main">
-            <Dots place="top-left"/>
-            <Dots place="bottom-right"/>
-            <NavBar />
             <SocialIcons />
         </div>
     )

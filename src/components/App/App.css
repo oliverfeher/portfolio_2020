@@ -16,8 +16,8 @@ html {
     justify-content: center;
   }
 #main {
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -28,7 +28,7 @@ html {
   justify-content: flex-end;
 }
 
-#explore-btn {
+.btn {
   margin-top: 3%;
   width: 10%;
   align-self: center;
@@ -40,7 +40,7 @@ html {
   padding: 10px;
 }
 
-#explore-btn:hover {
+.btn:hover {
   border: 3px solid white;
   color: black;
   cursor: pointer;
@@ -64,4 +64,55 @@ html {
 #center {
   display: flex;
   flex-direction: column;
+}
+
+#about-me-parapgraphs {
+  margin-top: 11%;
+  margin-left: 27%;
+}
+
+#about-me-parapgraphs p {
+  font-size: 1.1em;
+  color: white;
+  margin-top: 2%;
+  width: 55%;
+  animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+#portrait {
+  position: absolute;
+  width: 20%;
+  right: 20%;
+  top: 10%;
+  animation: slide-fwd-tr 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#aboutMe {
+  position: relative;
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-fwd-tr {
+  0% {
+    -webkit-transform: translateZ(0) translateY(0) translateX(0);
+            transform: translateZ(-100px) translateY(-100px) translateX(100px);
+            opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(160px) translateY(-100px) translateX(100px);
+            transform: translateZ(-160px) translateY(-30px) translateX(10px);
+            opacity: 1;
+  }
 }

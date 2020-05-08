@@ -5,7 +5,7 @@ class Button extends React.Component
     render()
     {
         return (
-            <a id={this.props.id}>{this.props.title}</a>
+            <a href={this.props.href} className={this.props.className} target="pdf-frame">{this.props.title}</a>
         )
     }
 }
