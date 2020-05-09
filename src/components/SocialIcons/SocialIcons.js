@@ -13,7 +13,7 @@ class SocialIcons extends React.Component
                 <img className="social-icon" onClick={this.redirecGitHub} src={github} alt="social-icon"></img>
                 <img className="social-icon" onClick={this.redirectTwitter} src={twitter} alt="social-icon"></img>
                 <img className="social-icon" onClick={this.redirectLinkedIn} src={linkedin} alt="social-icon"></img>
-                <img className="social-icon" id="email-icon" onClick={this.sendEmail} src={email} alt="social-icon"></img>
+                <a href="mailto:oliver92.feher@gmail.com"><img className="social-icon" id="email-icon" src={email} alt="social-icon"></img></a>
             </div>
         )
     }
@@ -31,6 +31,11 @@ class SocialIcons extends React.Component
     redirecGitHub()
     {
         window.open("https://github.com/oliverfeher", "_blank");
+    }
+
+    sendEmail()
+    {
+        console.log("hello")
     }
 
 }
