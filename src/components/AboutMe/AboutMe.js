@@ -18,7 +18,7 @@ function AboutMe()
             <div id="about-me-parapgraphs">
                 <img src={aboutMe} id="aboutMe" alt="about-me-logo"/>
                 <p>I'm a fullstack developer from the Raleigh/Durham area.</p>
-                <p>I have passion for building, teaching and learning. I'm experienced in JavaScript, Python, Ruby, Java and C#. I have strong background in Computer Science from majoring in Application and Database Development.</p>
+                <p>I have passion for building, teaching and learning. I'm experienced in JavaScript, Java, Ruby, Python and C#. I have strong background in Computer Science from majoring in Application and Database Development.</p>
                 <p>I enthusiastically bring strong skills in team-building, communication, debugging, data analysis and leadership that help progressive companies succeed. My creativity and passion for programming
                 are leading me to continuously learn and explore new technologies.</p>
             </div>
