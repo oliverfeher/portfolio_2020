@@ -10,7 +10,7 @@ class NavBar extends React.Component
                 <NavButton title="Home" path="/" />
                 <NavButton title="About me" path="/about" />
                 <NavButton title="Projects" path="/projects" />
-                <NavButton title="Contact" path="/contact" />
+                {/* <NavButton title="Contact" path="/contact" /> */}
             </div>
         )
     }

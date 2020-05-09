@@ -2,6 +2,7 @@ import React from "react";
 import github from "./github.svg";
 import twitter from "./twitter.svg";
 import linkedin from "./linkedin.svg";
+import email from "./mail.svg";
 
 class SocialIcons extends React.Component
 {
@@ -12,6 +13,7 @@ class SocialIcons extends React.Component
                 <img className="social-icon" onClick={this.redirecGitHub} src={github} alt="social-icon"></img>
                 <img className="social-icon" onClick={this.redirectTwitter} src={twitter} alt="social-icon"></img>
                 <img className="social-icon" onClick={this.redirectLinkedIn} src={linkedin} alt="social-icon"></img>
+                <img className="social-icon" id="email-icon" onClick={this.sendEmail} src={email} alt="social-icon"></img>
             </div>
         )
     }

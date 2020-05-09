@@ -38,6 +38,7 @@ html {
   text-align: center;
   color: white;
   padding: 10px;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -49,11 +50,15 @@ html {
 
 #social-container {
   margin-top: auto;
-  margin-bottom: 2%;
+  margin-bottom: 0.5%;
 }
 .social-icon {
   width: 2%;
   margin-left: 2%;
+}
+
+#email-icon {
+  width: 2.7%;
 }
 
 .social-icon:hover {
@@ -126,6 +131,7 @@ html {
   margin-right: 10%;
   margin-left: 10%;
   margin-top: 8%;
+  margin-bottom: 2%;
 }
 
 .card-container {
