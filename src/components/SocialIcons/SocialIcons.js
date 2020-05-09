@@ -9,9 +9,9 @@ class SocialIcons extends React.Component
     {
         return(
             <div id="social-container">
-                <img className="social-icon" onClick={this.redirecGitHub} src={github}></img>
-                <img className="social-icon" onClick={this.redirectTwitter} src={twitter}></img>
-                <img className="social-icon" onClick={this.redirectLinkedIn} src={linkedin}></img>
+                <img className="social-icon" onClick={this.redirecGitHub} src={github} alt="social-icon"></img>
+                <img className="social-icon" onClick={this.redirectTwitter} src={twitter} alt="social-icon"></img>
+                <img className="social-icon" onClick={this.redirectLinkedIn} src={linkedin} alt="social-icon"></img>
             </div>
         )
     }

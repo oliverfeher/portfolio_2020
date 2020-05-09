@@ -121,11 +121,11 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 25px;
+  grid-column-gap: 45px;
   grid-row-gap: 25px;
-  margin-right: 20%;
-  margin-left: 20%;
-  margin-top: 10%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 8%;
 }
 
 .card-container {
@@ -137,6 +137,7 @@ html {
 }
 
 .card-img {
+  border: 3px solid whitesmoke;
   margin-top: 0;
   width: 100%;
   height: 100%;
@@ -158,9 +159,46 @@ html {
   border-radius: 25px;
   border: 3px solid #0C8295;
   color: white;
-  cursor: pointer;
+}
+
+.card-description-text-container {
+  margin-top: -13%;
 }
 
 .card-description-text {
-  margin: 5%;
+  margin: 5% 10% 0 5%; 
+  font-size: 0.8em;
+}
+
+.card-description-buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+  margin-top: 5%;
+}
+
+.card-description-button {
+  margin-right: 15%;
+  margin-left: 15%;
+  text-align: center;
+  border-radius: 25px;
+  color: white;
+  width: 80px;
+  padding: 5px 0 5px 0;
+  text-decoration: none;
+  border: 3px solid #02ADC8;
+}
+
+.card-description-button:hover {
+  background-color: white;
+  color: black;
+  border: 3px white solid;
+}
+
+.xIcon {
+  margin-top: 3%;
+  position: relative;
+  width: 8%;
+  left: 87%;
+  cursor: pointer;
 }
