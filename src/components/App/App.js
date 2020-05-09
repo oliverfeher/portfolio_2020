@@ -12,6 +12,7 @@ import gif1 from "../App/gif.gif"
 import gif2 from "../App/gif2.gif"
 import gif3 from "../App/gif3.gif"
 import gif4 from "../App/gif4.gif"
+import myproject from "../App/myprojects.png"
 
 function App() 
 {
@@ -59,7 +60,7 @@ function Projects()
     return (
         <div id="main">
             <NavBar />
-            <p className="section-title">Recent Projects</p>
+            <img src={myproject} className="section-title"/>
             <div id="projects-container">
                 <ProjectCard 
                     src={gif1} 
