@@ -11,7 +11,7 @@ class Hello extends React.Component
         return (
             <div id="hello-container">
                 <img id="hello-dots" src={dots}  alt="hello-logo"/>
-                <img src={logo}  alt="hello-logo"/>
+                <img src={logo}  alt="hello-logo" id="hello-img"/>
             </div>
         )
     }

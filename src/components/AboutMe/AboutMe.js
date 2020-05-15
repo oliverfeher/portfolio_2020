@@ -5,7 +5,9 @@ import NavBar from "../NavBar/NavBar"
 import Dots from "../Dots/Dots";
 import Button from "../Button/Button";
 import SocialIcons from "../SocialIcons/SocialIcons";
-import pdf from "../AboutMe/resume.pdf"
+import pdf from "../AboutMe/resume.pdf";
+import NavBarMobile from "../NavBarMobile/NavBarMobile"
+
 
 
 function AboutMe()
@@ -15,6 +17,7 @@ function AboutMe()
             <Dots place="top-left"/>
             <Dots place="bottom-right"/>
             <NavBar />
+            <NavBarMobile />
             <div id="about-me-parapgraphs">
                 <img src={aboutMe} id="aboutMe" alt="about-me-logo"/>
                 <p>I'm a fullstack developer from the Raleigh/Durham area.</p>

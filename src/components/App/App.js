@@ -4,7 +4,9 @@ import { Switch, Route, Link } from "react-router-dom";
 import Hello from "../Hello/Hello";
 import Intro from "../Intro/Intro";
 import NavBar from "../NavBar/NavBar"
+import NavBarMobile from "../NavBarMobile/NavBarMobile"
 import Dots from "../Dots/Dots";
+import Dots2 from "../Dots/mobiledots.png";
 import SocialIcons from "../SocialIcons/SocialIcons";
 import AboutMe from "../AboutMe/AboutMe"
 import ProjectCard from "../ProjectCard/ProjectCard";
@@ -12,6 +14,7 @@ import gif1 from "../App/gif.gif"
 import gif2 from "../App/gif2.gif"
 import gif3 from "../App/gif3.gif"
 import gif4 from "../App/gif4.gif"
+import gif5 from "../App/gif5.gif"
 import myproject from "../App/myprojects.png"
 
 function App() 
@@ -32,10 +35,12 @@ function HomePage()
         <div id="main">
             <Dots place="top-left"/>
             <Dots place="bottom-right"/>
+            <img src={Dots2} id="dots2" alt="bottom-design"/>
+            <NavBarMobile />
             <NavBar />
             <div id="center">
                 <Intro />
-                <Hello />s
+                <Hello />
                 <Link className="btn" to="/projects">explore</Link>
             </div>
             <SocialIcons />
@@ -43,28 +48,29 @@ function HomePage()
     )
 }
 
-function Contact()
-{
-    return (
-        <div id="main">
-            <Dots place="top-left"/>
-            <Dots place="bottom-right"/>
-            <NavBar />
-            <SocialIcons />
-        </div>
-    )
-}
+// function Contact()
+// {
+//     return (
+//         <div id="main">
+//             <Dots place="top-left"/>
+//             <Dots place="bottom-right"/>
+//             <NavBar />
+//             <SocialIcons />
+//         </div>
+//     )
+// }
 
 function Projects()
 {
     return (
         <div id="main">
             <NavBar />
-            <img src={myproject} className="section-title"/>
+            <NavBarMobile />
+            <img src={myproject} className="section-title" alt="project-section-title"/>
             <div id="projects-container">
                 <ProjectCard 
                     src={gif1} 
-                    desc1="+ Built Ruby's Sinatra framework."
+                    desc1="+ Built with Ruby's Sinatra framework."
                     desc2="+ Utilized MVC pattern."
                     desc3="+ Login/Signup authentication system with BCrypt."
                     desc4="+ Utilize CRUD actions to a SQLite3 database."
@@ -78,7 +84,7 @@ function Projects()
                     desc2="+ MVC pattern, RESTful routes."
                     desc3="+ Login/Signup authentication system with BCrypt."
                     desc4="+ Utilize CRUD actions to a PostgreSQL database."
-                    source="https://github.com/oliverfeher/flatironcross"
+                    source="https://github.com/oliverfeher/alpha_shoes"
                     demo="http://alpha-shoes.herokuapp.com/"
                     videoLive="live"
                 />
@@ -93,13 +99,23 @@ function Projects()
                     videoLive="live"
                 />
                 <ProjectCard 
+                    src={gif5} 
+                    desc1="+ financial application with D3js"
+                    desc2="+ Developed a Rails API with user/bills/income endpoints."
+                    desc3="+ Used BCrypt for server-side authentication."
+                    desc4="+ Used vanilla ES6 JavaScript to develop front-end."
+                    source="https://github.com/oliverfeher/trackmymoney"
+                    // demo="https://nba-fam.oliverfeher.repl.run/"
+                    videoLive="none"
+                />
+                <ProjectCard 
                     src={gif4} 
                     desc1="+ Portfolio page built with React"
                     desc2="+ Utilized React-Routers for frontend routing"
                     desc3="+ Custom built UI"
                     desc4="+ State management with Redux"
-                    source="https://github.com/oliverfeher/nbafam"
-                    demo="https://nba-fam.oliverfeher.repl.run/"
+                    source="https://github.com/oliverfeher/portfolio_2020"
+                    demo="http://www.oliverfeher.com"
                     videoLive="live"
                 />
             </div>

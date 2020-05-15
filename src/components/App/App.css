@@ -47,6 +47,9 @@ html {
   cursor: pointer;
   background-color: white;
 }
+#dots2 {
+  display: none;
+}
 
 #social-container {
   margin-top: auto;
@@ -208,4 +211,131 @@ html {
   width: 8%;
   left: 87%;
   cursor: pointer;
+}
+#top-left2, #bottom-right2 {
+  display: none;
+}
+
+#nav-bar-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+  #projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #portrait {
+    width: 50%;
+    top: 10%;
+    right: 10%;
+  }
+
+  #nav-bar {
+    display: none;
+  }
+  #projects-container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    margin-bottom: 10%;
+  }
+
+  .card-container {
+    width: 100%;
+    height: 200px;
+  }
+
+  .card-description-text {
+    font-size: 0.7em;
+  }
+
+  img#hello-dots {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 25%;
+  }
+
+  p.intro-p {
+    font-size: 1.6em;
+  }
+
+  #hello-img {
+    width: 75%;
+  }
+  #center {
+    margin-top: 5%;
+  }
+  .section-title {
+    width: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  #about-me-parapgraphs {
+    width: 80%;
+    align-self: center;
+    align-content: center;
+    margin: 40% 0 0 0;
+    
+  }
+  #about-me-parapgraphs p {
+    text-align: center;
+    margin: 0 0 10% 0;
+    width: 100%;
+  }
+  #aboutMe {
+    width: 65%;
+    position: relative;
+    left: 10%;
+    margin-bottom: 10%;
+  }
+
+  img#top-left {
+    display: none;
+  }
+  img#bottom-right {
+    display: none;
+  }
+  #social-container {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .social-icon {
+    width: 8%;
+    margin-right: 5%;
+  }
+  #email-icon {
+    width: 11%;
+  }
+
+  .btn {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 20%;
+  }
+  
+  #dots2 {
+    display: block;
+    position: fixed;
+    width: 135%;
+    left: -10%;
+    bottom: -7%;
+    right: 0;
+    animation: slide-in-br 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  #nav-bar-mobile {
+    display: block;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    padding: 5% 0 5% 0;
+    margin-bottom: 5%;
+    border-bottom:5px solid #0B8195;
+    box-shadow: 0px 15px 50px 0px #0B8195;
+  }
 }
